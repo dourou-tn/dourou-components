@@ -11,6 +11,6 @@
 - [X] DouTitle
 - [ ] DouCard
 - [ ] DouContainer
-- [ ] DouBanner
+- [X] DouBanner
 - [ ] DouDrawer
 - [ ] DouPhoneInput
