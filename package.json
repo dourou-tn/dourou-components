@@ -1,0 +1,8 @@
+{
+  "name": "dourou-components",
+  "version": "0.0.1",
+  "description": "All visual component of Dourou App",
+  "main": "index.js",
+  "author": "Jrb Youssef <jrb.youssef@gmail.com>",
+  "license": "MIT"
+}
