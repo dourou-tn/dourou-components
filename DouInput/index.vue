@@ -10,6 +10,7 @@
       v-on="inputListeners"
       :value="value"
     />
+    <p v-if="hint" v-text="hint" class="text-gray-500 text-xs mt-2" />
   </div>
 </template>
 
@@ -32,6 +33,9 @@ export default {
       type: String,
     },
     label: {
+      type: String,
+    },
+    hint: {
       type: String,
     }
   },

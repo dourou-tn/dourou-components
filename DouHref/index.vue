@@ -3,7 +3,7 @@
   v-text="text"
   :href="href"
   v-on="$listeners"
-  class="inline-block align-baseline text-sm text-indigo-500 hover:text-indigo-800"
+  class="inline-block align-baseline text-purple hover:text-indigo-500"
 />
 </template>
 <script>

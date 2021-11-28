@@ -1,6 +1,6 @@
 <template>
   <label
-    class="block text-gray-700 text-sm font-bold mb-2"
+    class="block text-purple text-sm font-bold mb-2"
     for="username"
   >
     {{ label }}
