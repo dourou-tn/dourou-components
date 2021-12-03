@@ -1,5 +1,5 @@
 <template>
-  <Nuxt-link :to="to" class="text-purple tracking-wider">
+  <Nuxt-link :to="to" class="text-purple-500 tracking-wider">
     {{ text }}
   </Nuxt-link>
 </template>

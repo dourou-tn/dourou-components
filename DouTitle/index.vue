@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-purple font-bold text-2xl text-center font-medium my-10">
+  <h2 class="text-purple-500 font-bold text-2xl text-center font-medium my-10">
     {{ text }}
   </h2>
 </template>
