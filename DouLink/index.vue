@@ -1,5 +1,5 @@
 <template>
-  <Nuxt-link :to="to" class="text-purple-500 tracking-wider">
+  <Nuxt-link :to="to" :class="`text-${color}`" class="tracking-wider">
     {{ text }}
   </Nuxt-link>
 </template>
@@ -15,6 +15,10 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    color: {
+      type: String,
+      default: 'purple-500'
     }
   }
 }
