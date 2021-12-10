@@ -1,6 +1,7 @@
 <template>
   <label
-    class="block text-purple-500 text-sm font-bold mb-2"
+    :class="`text-${color}`"
+    class="label block text-sm font-bold mb-2"
     for="username"
   >
     {{ label }}
@@ -14,6 +15,10 @@
       label: {
         type: String,
         required: true
+      },
+      color: {
+        type: String,
+        default: 'purple-500'
       }
     }
   }

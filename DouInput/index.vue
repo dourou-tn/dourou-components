@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <DouLabel v-if="label" :label="label" />
+  <div class="form-control">
+    <DouLabel v-if="label" :label="label" :color="dark ? 'white' : 'purple-500'" />
     <input
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-      :class="{ 'border-red-300': error }"
+      class="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+      :class="{ 'border-red-300': error, 'bg-neutral': dark, 'text-white': dark, 'text-gray-700': !dark }"
       :id="id"
       :type="type"
       :placeholder="placeholder"
@@ -43,6 +43,10 @@ export default {
     error: {
       type: String,
       default: '',
+    },
+    dark: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
