@@ -1,7 +1,14 @@
 <template>
-  <Nuxt-link :to="localePath(to)" :class="`text-${color}`" class="font-semibold tracking-wider" :exact="exact">
+  <nuxt-link
+    :to="localePath(to)"
+    :exact="exact"
+    :class="`text-${color}`"
+    class="font-semibold tracking-wider"
+    v-on="$listeners"
+    v-bind="$attrs"
+  >
     {{ text }}
-  </Nuxt-link>
+  </nuxt-link>
 </template>
 
 <script>
@@ -9,7 +16,7 @@ export default {
   name: 'DouLink',
   props: {
     to: {
-      type: String,
+      type: String|Object,
       required: true
     },
     text: {
@@ -23,7 +30,11 @@ export default {
     exact: {
       type: Boolean,
       default: false,
-    }
+    },
+    styles: {
+      type: String,
+      default: '',
+    },
   }
 }
 </script>
