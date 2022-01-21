@@ -2,8 +2,8 @@
   <nuxt-link
     :to="localePath(to)"
     :exact="exact"
-    :class="`text-${color}`"
-    class="font-semibold tracking-wider"
+    :class="`text-${color} font-${normal ? 'normal' : 'semibold'}`"
+    class="tracking-wider"
     v-on="$listeners"
     v-bind="$attrs"
   >
@@ -35,6 +35,10 @@ export default {
       type: String,
       default: '',
     },
+    normal: {
+      type: Boolean,
+      default: false,
+    }
   }
 }
 </script>
