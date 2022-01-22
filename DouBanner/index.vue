@@ -10,7 +10,7 @@
     props: {
       imgClass: {
         type: String,
-        default: 'object-cover w-full'
+        default: 'mx-auto'
       },
       'img-path': {
         type: String,
