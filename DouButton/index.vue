@@ -1,7 +1,7 @@
 <template>
   <button
-    :class="`bg-${color}`"
-    class=" hover:bg-indigo-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+    :class="`bg-${color} focus:ring-${color}`"
+    class="text-sm hover:bg-indigo-700 text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-1" type="button"
     v-on="$listeners"
   >
     {{ label }}
