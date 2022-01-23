@@ -2,7 +2,7 @@
   <nuxt-link
     :to="localePath(to)"
     :exact="exact"
-    class="focus:outline-none focus:ring-2 focus:ring-offset-1 "
+    class="hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-1"
     :class="`text-${color} font-${normal ? 'normal' : 'semibold'} focus:ring-${color}`"
     v-on="$listeners"
     v-bind="$attrs"
@@ -17,7 +17,7 @@ export default {
   props: {
     to: {
       type: String|Object,
-      required: true
+      default: '/',
     },
     text: {
       type: String,

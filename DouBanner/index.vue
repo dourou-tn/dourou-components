@@ -10,7 +10,7 @@
     props: {
       imgClass: {
         type: String,
-        default: 'mx-auto'
+        default: 'mx-auto rounded-b-md shadow-md'
       },
       'img-path': {
         type: String,

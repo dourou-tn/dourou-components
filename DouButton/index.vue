@@ -1,7 +1,7 @@
 <template>
   <button
-    :class="`bg-${color} focus:ring-${color}`"
-    class="text-sm hover:bg-indigo-700 text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-1" type="button"
+    :class="`bg-${color} text-${textColor} focus:outline-${textColor}`"
+    class="text-sm shadow hover:shadow-lg py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-purple-600 font-bold hover:opacity-90" type="button"
     v-on="$listeners"
   >
     {{ label }}
@@ -18,7 +18,11 @@ export default {
     color: {
       type: String,
       default: 'purple-500',
-    }
+    },
+    textColor: {
+      type: String,
+      default: 'orange-500',
+    },
   }
 }
 </script>

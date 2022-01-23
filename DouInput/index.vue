@@ -2,7 +2,7 @@
   <div class="form-control">
     <DouLabel v-if="label" :label="label" :color="dark ? 'white' : 'purple-500'" />
     <input
-      class="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+      class="shadow appearance-none border border-purple-400 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-purple-500 bg-purple-200"
       :class="{ 'border-red-300': error, 'bg-neutral': dark, 'text-white': dark, 'text-gray-700': !dark }"
       :id="id"
       :type="type"
