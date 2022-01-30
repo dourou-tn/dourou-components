@@ -1,12 +1,11 @@
 <template>
-  <Nuxt-link :to="localePath('/')">
+  <Nuxt-link :to="localePath('/')" class="cursor-pointer">
     <img
-      :class="`w-${width} ${ light ? 'block' : 'hidden sm:block' }`"
+      :class="`${ light ? 'block' : 'hidden sm:block' }`"
       :src="logo_light"
     />
     <img
       v-if="!light"
-      :class="`w-${width}`"
       :src="logo_dark"
       class="block sm:hidden"
     />
@@ -27,8 +26,8 @@
     },
     data () {
       return {
-        logo_light: require('~/assets/image/logo-light.png'),
-        logo_dark: require('~/assets/image/logo-dark.png'),
+        logo_light: require('~/assets/image/logo-light-new-sm.png'),
+        logo_dark: require('~/assets/image/logo-dark-new-sm.png'),
         lightClass: ''
       }
     }

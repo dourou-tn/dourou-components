@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <img :src="imgPath" alt="" :class="imgClass">
-  </div>
+  <!-- <img :src="imgPath" alt="" :class="imgClass"> -->
+  <nuxt-img :src="imgPath" alt="" :class="imgClass"></nuxt-img>
 </template>
 
 <script>
@@ -10,7 +9,7 @@
     props: {
       imgClass: {
         type: String,
-        default: 'mx-auto rounded-b-md shadow-md'
+        default: 'shadow-md'
       },
       'img-path': {
         type: String,
