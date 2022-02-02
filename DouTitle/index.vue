@@ -1,7 +1,7 @@
 <template>
   <h2
     :class="`text-${color}`"
-    class="font-bold text-2xl text-center font-medium my-10">
+    class="font-semibold text-2xl md:text-3xl text-center my-14 text-purple-500">
     {{ text }}
   </h2>
 </template>

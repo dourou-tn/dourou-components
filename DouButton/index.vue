@@ -3,6 +3,7 @@
     :class="`bg-${color} text-${textColor} focus:outline-${textColor}`"
     class="text-sm shadow hover:shadow-lg py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-purple-600 font-bold hover:opacity-90" type="button"
     v-on="$listeners"
+    v-bind="$attrs"
   >
     {{ label }}
   </button>
