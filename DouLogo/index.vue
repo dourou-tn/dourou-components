@@ -5,9 +5,9 @@
       :src="logo_light"
     />
     <nuxt-img
-      v-if="!light"
+      v-if="!light && dark"
       :src="logo_dark"
-      class="block sm:hidden"
+      :class="`${ dark ? 'block' : 'hidden sm:block' }`"
     />
   </Nuxt-link>
 </template>
@@ -20,6 +20,10 @@
       },
       // If passed true only the light version of the logo will be shown
       light: {
+        type: Boolean,
+        default: false
+      },
+      dark: {
         type: Boolean,
         default: false
       }
